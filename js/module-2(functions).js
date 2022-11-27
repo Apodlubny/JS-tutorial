@@ -123,13 +123,13 @@ console.log(calculateTotalPrice([100, 200, 300])); // 600
  */
 // **************************************
 
-const slugify = function (string) {
-  return string.toLowerCase().split(" ").join("-");
-};
+// const slugify = function (string) {
+//   return string.toLowerCase().split(" ").join("-");
+// };
 
-console.log(slugify("Top 10 benefits of React framework"));
-console.log(slugify("Azure Static Web Apps are Awesome"));
-console.log(slugify("Technical writing tips for non-native English speakers"));
+// console.log(slugify("Top 10 benefits of React framework"));
+// console.log(slugify("Azure Static Web Apps are Awesome"));
+// console.log(slugify("Technical writing tips for non-native English speakers"));
 // **************************************
 // ============================================================================================
 
@@ -187,22 +187,32 @@ const add = function (...args) {
  *   для которых есть аналог в оригинальном массиве.
  */
 
+// const filterNumbers = function (array, ...args) {
+//   console.log("array: ", array);
+//   console.log("args: ", args);
+//   const uniqueElements = [];
+
+//   for (const element of array) {
+//     if (args.includes(element)) {
+//       uniqueElements.push(element);
+
+//       console.log(`${element} есть везде!`);
+//     }
+//   }
+
+//   return uniqueElements;
+// };
+// та же задача но функция возвращает новый масив не одинаковых элементов
 const filterNumbers = function (array, ...args) {
-  console.log("array: ", array);
-  console.log("args: ", args);
-  const uniqueElements = [];
+  const notSameElements = [];
 
   for (const element of array) {
-    if (args.includes(element)) {
-      uniqueElements.push(element);
-
-      console.log(`${element} есть везде!`);
+    if (!args.includes(element)) {
+      notSameElements.push(element);
     }
   }
-
-  return uniqueElements;
+  return notSameElements;
 };
-
 console.log(filterNumbers([1, 2, 3, 4, 5], 10, 15, 2, 3, 8)); // [2, 3]
 console.log(filterNumbers([10, 15, 25, 30], 23, 30, 18, 15)); // [30, 15]
 console.log(filterNumbers([100, 200, 300, 400, 500], 7, 12, 200, 64)); // [200]
