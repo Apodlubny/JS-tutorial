@@ -230,8 +230,8 @@
 //   outputEl.textContent = total;
 // });
 // ============================================================================================
-
-let base = Number(prompt("Давай число"));
-let power = Number(prompt("Давай степень"));
-let res = Math.pow(base, power);
-console.log(res);
+// возведение числа в степень
+// let base = Number(prompt("Давай число"));
+// let power = Number(prompt("Давай степень"));
+// let res = Math.pow(base, power);
+// console.log(res);

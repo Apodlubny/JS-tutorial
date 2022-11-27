@@ -136,22 +136,22 @@
 // console.log(numbers.pop()); //  1
 // console.log(numbers); // []
 
-const clients = ["Mango", "Ajax", "Poly", "Kiwi", "Andy", "Rocky"];
-console.log(clients.slice(1, 3)); // ["Ajax", "Poly"]
-console.log(clients.slice(3, 5)); // Kiwi Andy
-console.log(clients.slice(0, 1)); // Mango
-console.log(clients.slice(2, 6)); // Poly, Kiwi Andy Rocky
-console.log(clients.slice(3)); // Kiwi Andy Rocky;
-console.log(clients.slice(-5)); // 'Ajax', 'Poly', 'Kiwi', 'Andy', 'Rocky']
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi", "Andy", "Rocky"];
+// console.log(clients.slice(1, 3)); // ["Ajax", "Poly"]
+// console.log(clients.slice(3, 5)); // Kiwi Andy
+// console.log(clients.slice(0, 1)); // Mango
+// console.log(clients.slice(2, 6)); // Poly, Kiwi Andy Rocky
+// console.log(clients.slice(3)); // Kiwi Andy Rocky;
+// console.log(clients.slice(-5)); // 'Ajax', 'Poly', 'Kiwi', 'Andy', 'Rocky']
 
-const colors = ["red", "green", "blue"];
+// const colors = ["red", "green", "blue"];
 
-colors.splice(2, 0, "purple");
-console.log(colors); // ["red", "green", "purple", "blue"]
+// colors.splice(2, 0, "purple");
+// console.log(colors); // ["red", "green", "purple", "blue"]
 
-// постчитать общую сумму
-const salary = [2000, 3000, 2500, 4000, 5000, 5500];
-let totalSalary = 0;
+// // постчитать общую сумму
+// const salary = [2000, 3000, 2500, 4000, 5000, 5500];
+// let totalSalary = 0;
 // for (let i = 0; i < salary.length; i += 1) {
 //   totalSalary += salary[i];
 //   console.table(salary[i]);
